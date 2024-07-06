@@ -23,7 +23,8 @@ export default function Header() {
             return (
               <li
                 key={index}
-                className="hover:bg-gray-100   max-sm:gap-x-0 max-sm:gap-y-0 p-2 rounded-full text-gray-600 hover:text-black font-semibold hover:cursor-pointer"
+                className="hover:bg-gray-100  hover:text-gray-950  max-sm:gap-x-0 max-sm:gap-y-0 p-2 
+                rounded-full text-gray-500  font-thin hover:cursor-pointer"
               >
                 <Link href={link.hash}>{link.name}</Link>
               </li>
