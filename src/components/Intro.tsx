@@ -10,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 function Intro() {
   return (
-    <section className="mb-28 mx-auto max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section className="mb-28 mx-auto  text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex justify-center items-center ">
         <div className="relative ">
           <motion.div
@@ -64,7 +64,7 @@ function Intro() {
       >
         <Link
           href={"#contact"}
-          className="rounded-full flex justify-center items-center gap-3 bg-gray-800 
+          className="group rounded-full flex justify-center items-center gap-3 bg-gray-800 
             outline-none
           text-white font-bold  py-3 px-4 cursor-pointer
           focus:scale-110 hover:scale-110  hover:bg-gray-950 
@@ -74,13 +74,13 @@ function Intro() {
         >
           Contact me here
           <span>
-            <BsArrowRight className="opacity-70 animate-slide transition" />
+            <BsArrowRight className="opacity-70  group-hover:translate-x-1 transition" />
           </span>
         </Link>
         <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
           focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer  "
-          href="/cv.pdf"
+          href="/Hany-Mohamed.pdf"
           download
         >
           Download My CV
@@ -89,16 +89,16 @@ function Intro() {
         <a
           href="https://www.linkedin.com/in/hany-saad-eldean-1b616625a/"
           target="_blank"
-          className="bg-white p-4 text-xl rounded-full  hover:scale-110 transition text-gray-700 hover:text-gray-950 "
+          className="bg-white p-4 group text-xl rounded-full  hover:scale-110 transition text-gray-700 hover:text-gray-950 "
         >
-          <FaLinkedin />
+          <FaLinkedin className="group-hover:rotate-6 transition" />
         </a>
         <a
           href="https://github.com/hanysaadeldeen"
           target="_blank"
-          className="bg-white p-4 text-xl rounded-full transition hover:scale-110  text-gray-700 hover:text-gray-950 "
+          className="group bg-white p-4 text-xl rounded-full transition hover:scale-110  text-gray-700 hover:text-gray-950 "
         >
-          <FaGithub />
+          <FaGithub className="group-hover:-rotate-6 transition" />
         </a>
       </motion.div>
     </section>
