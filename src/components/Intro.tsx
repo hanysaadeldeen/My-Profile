@@ -10,7 +10,10 @@ import { FaGithub } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 function Intro() {
   return (
-    <section className="mb-28 mx-auto  text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      id="home"
+      className="mb-28 mx-auto  text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex justify-center items-center ">
         <div className="relative ">
           <motion.div

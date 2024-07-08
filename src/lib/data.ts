@@ -6,7 +6,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import canva from "@/assets/canva.jpg";
 import Hook from "@/assets/hook.jpg";
 import coffie from "@/assets/coffie.jpg";
+import dashborad from "@/assets/dashborad.png";
 import nike from "@/assets/nike.jpg";
+import game from "@/assets/game.png";
 
 export const links = [
   {
@@ -59,8 +61,17 @@ export const projectsData = [
     title: "Hook Store",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Redux-Toolkit", "Css", "Tailwind", "Figma"],
+    tags: [
+      "React",
+      "Redux-Toolkit",
+      "React-Hooks",
+      "Axois",
+      "Css",
+      "Tailwind",
+      "Figma",
+    ],
     imageUrl: Hook,
+    link: "https://master--melodious-starship-c29078.netlify.app/#/",
   },
   {
     title: "Canva",
@@ -68,6 +79,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["JavaScript", "Css", "Html"],
     imageUrl: canva,
+    link: "https://canva-design-ruby.vercel.app/",
   },
   {
     title: "Nike",
@@ -75,13 +87,32 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Tailwind", "Figma"],
     imageUrl: nike,
+    link: "https://master--gorgeous-mousse-f49e18.netlify.app/",
   },
   {
-    title: "coffie",
+    title: "Coffie",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["Html", "Css", "Javascript"],
     imageUrl: coffie,
+    link: "https://hanysaadeldeen.github.io/CoffeeShop/",
+  },
+  {
+    title: "Dashboard",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["Html", "Css", "Bootstrap"],
+    imageUrl: dashborad,
+    link: "https://hanysaadeldeen.github.io/Dashboard/",
+  },
+  {
+    title: "Game Website",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["Html", "Css"],
+    link: "https://hanysaadeldeen.github.io/gaming-website/",
+
+    imageUrl: game,
   },
 ] as const;
 

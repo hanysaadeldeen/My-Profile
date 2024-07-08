@@ -21,13 +21,14 @@ export default function Header() {
         >
           {links.map((link, index) => {
             return (
-              <li
-                key={index}
-                className="hover:bg-gray-100  hover:text-gray-950  max-sm:gap-x-0 max-sm:gap-y-0 p-2 
+              <Link key={index} href={link.hash}>
+                <li
+                  className="hover:bg-gray-100  hover:text-gray-950  transition max-sm:gap-x-0 max-sm:gap-y-0 p-2 
                 rounded-full text-gray-500  font-thin hover:cursor-pointer"
-              >
-                <Link href={link.hash}>{link.name}</Link>
-              </li>
+                >
+                  {link.name}
+                </li>
+              </Link>
             );
           })}
         </ul>

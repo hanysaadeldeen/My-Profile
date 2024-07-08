@@ -9,7 +9,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
       id="about"
-      className="capitalize  text-center px-4 max-sm:mb-28 mb-36 leading-7"
+      className="capitalize  scroll-mt-[5rem] text-center px-4 max-sm:mb-28 mb-36 leading-7"
     >
       <SectionName>About me</SectionName>
       <p className=" ">
