@@ -33,7 +33,7 @@ function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
               group cursor-pointer
               rounded-md  flex items-center 
               p-4  bg-gray-100 relative overflow-hidden
-              md:h-[20rem] max-md:h-[17rem]
+              md:h-[24rem] max-md:h-[17rem]
               transition hover:bg-gray-200 border border-gray-300
               "
         >

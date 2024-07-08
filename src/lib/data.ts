@@ -42,7 +42,7 @@ export const experiencesData = [
     title: "computer science and artificial intelligence",
     location: "Damietta, Egypt",
     description:
-      "I'm pursuing a degree in Computer Science and Artificial Intelligence at Damietta University, I'll be graduating in 2025,",
+      "is a comprehensive web and mobile e-commerce platform offering seamless user management, dynamic UI with React, secure payments via Stripe, and advanced shopping features like product browsing, reviews, and discount codes.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2025",
   },
@@ -60,7 +60,7 @@ export const projectsData = [
   {
     title: "Hook Store",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "is a comprehensive web and mobile e-commerce platform offering seamless user management, dynamic UI with React, secure payments via Stripe, and advanced shopping features .",
     tags: [
       "React",
       "Redux-Toolkit",
@@ -76,7 +76,7 @@ export const projectsData = [
   {
     title: "Canva",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "An elegant and modern clothing store website designed with HTML, CSS, and JavaScript, enhanced by Font Awesome for a stylish touch. It offers a seamless shopping experience with dynamic interactions.",
     tags: ["JavaScript", "Css", "Html"],
     imageUrl: canva,
     link: "https://canva-design-ruby.vercel.app/",
@@ -84,7 +84,7 @@ export const projectsData = [
   {
     title: "Nike",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A modern athletic shoe store website designed with HTML5, CSS3, and Tailwind CSS, offering a sleek and flexible shopping experience across all devices. The site features intuitive navigation and visually appealing displays to attract and engage sports and sneaker enthusiasts.",
     tags: ["React", "Tailwind", "Figma"],
     imageUrl: nike,
     link: "https://master--gorgeous-mousse-f49e18.netlify.app/",
@@ -92,7 +92,7 @@ export const projectsData = [
   {
     title: "Coffie",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A stylish coffee sales website crafted with HTML and CSS, featuring elegant Font Awesome icons. The site offers an exceptional user experience with intuitive navigation, visual appeal, and compatibility across all devices.",
     tags: ["Html", "Css", "Javascript"],
     imageUrl: coffie,
     link: "https://hanysaadeldeen.github.io/CoffeeShop/",
@@ -100,7 +100,7 @@ export const projectsData = [
   {
     title: "Dashboard",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A cutting-edge dashboard for freelancers built with HTML5, CSS3, and Bootstrap, offering clear project pricing, modern responsive design, and exceptional quality for efficient project management across all devices.",
     tags: ["Html", "Css", "Bootstrap"],
     imageUrl: dashborad,
     link: "https://hanysaadeldeen.github.io/Dashboard/",
@@ -108,7 +108,7 @@ export const projectsData = [
   {
     title: "Game Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A game showcase website designed with HTML5 and CSS3, offering a responsive, visually appealing experience across all devices. Crafted without frameworks, it highlights original web design skills and creativity in the digital gaming world.",
     tags: ["Html", "Css"],
     link: "https://hanysaadeldeen.github.io/gaming-website/",
 

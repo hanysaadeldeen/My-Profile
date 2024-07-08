@@ -8,9 +8,24 @@ import { HiDownload } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { ActiveSectionfunc } from "@/context/ActiveSectionContextProvider";
+
 function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+
+  const { timeOfLastClick, secActiveSection } = ActiveSectionfunc();
+  useEffect(() => {
+    if (inView === true && inView && Date.now() - timeOfLastClick > 1000) {
+      secActiveSection("Home");
+    }
+  }, [inView, timeOfLastClick, secActiveSection]);
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 mx-auto  text-center sm:mb-0 scroll-mt-[100rem]"
     >

@@ -1,9 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
-import React from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
+import { ActiveSectionfunc } from "@/context/ActiveSectionContextProvider";
 export default function Header() {
+  const { activeSection, secActiveSection, setTimeOfLastClick } =
+    ActiveSectionfunc();
+
   return (
     <header className="relative z-[999] ">
       <motion.div
@@ -21,13 +25,30 @@ export default function Header() {
         >
           {links.map((link, index) => {
             return (
-              <Link key={index} href={link.hash}>
-                <li
-                  className="hover:bg-gray-100  hover:text-gray-950  transition max-sm:gap-x-0 max-sm:gap-y-0 p-2 
-                rounded-full text-gray-500  font-thin hover:cursor-pointer"
+              <Link
+                key={index}
+                href={link.hash}
+                onClick={() => {
+                  secActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                <motion.li
+                  layoutId="activeSection"
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30,
+                  }}
+                  className={
+                    "hover:bg-gray-100  hover:text-gray-950  transition max-sm:gap-x-0 max-sm:gap-y-0 p-2 rounded-full text-gray-500  font-thin hover:cursor-pointer " +
+                    (activeSection === link.name
+                      ? "bg-gray-100  text-gray-950"
+                      : "")
+                  }
                 >
                   {link.name}
-                </li>
+                </motion.li>
               </Link>
             );
           })}
