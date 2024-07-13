@@ -135,4 +135,5 @@ export const skillsData = [
   "Postman",
   "Figma",
   "Framer Motion",
+  "Jira",
 ] as const;

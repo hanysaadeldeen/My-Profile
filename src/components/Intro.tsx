@@ -8,21 +8,10 @@ import { HiDownload } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { ActiveSectionfunc } from "@/context/ActiveSectionContextProvider";
-
+import { useSectionInView } from "@/lib/hook";
 function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
+  const ref = useSectionInView(0.15, "Home");
 
-  const { timeOfLastClick, secActiveSection } = ActiveSectionfunc();
-  useEffect(() => {
-    if (inView === true && inView && Date.now() - timeOfLastClick > 1000) {
-      secActiveSection("Home");
-    }
-  }, [inView, timeOfLastClick, secActiveSection]);
   return (
     <section
       ref={ref}

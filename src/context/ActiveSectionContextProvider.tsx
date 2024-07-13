@@ -2,9 +2,7 @@
 
 import { createContext, useContext, useState } from "react";
 
-import { links } from "@/lib/data";
-
-type sectionName = (typeof links)[number]["name"];
+import type { sectionName } from "@/lib/type";
 
 type ActiveSectionContextType = {
   activeSection: sectionName;

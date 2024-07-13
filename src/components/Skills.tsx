@@ -1,21 +1,10 @@
 "use client";
 import { skillsData } from "@/lib/data";
-import React, { useEffect } from "react";
 import SectionName from "./SectionName";
-import { useInView } from "react-intersection-observer";
-import { ActiveSectionfunc } from "@/context/ActiveSectionContextProvider";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hook";
 const Skills = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.15,
-  });
-
-  const { secActiveSection, timeOfLastClick } = ActiveSectionfunc();
-  useEffect(() => {
-    if (inView === true && inView && Date.now() - timeOfLastClick > 1000) {
-      secActiveSection("Skills");
-    }
-  }, [inView, timeOfLastClick, secActiveSection]);
+  const ref = useSectionInView(0.15, "Skills");
 
   return (
     <section ref={ref} id="skills" className="mb-28 scroll-mt-28">
