@@ -1,5 +1,5 @@
 import React from "react";
-// import { CgWorkAlt } from "react-icons/cg";
+import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
@@ -42,9 +42,17 @@ export const experiencesData = [
     title: "computer science and artificial intelligence",
     location: "Damietta, Egypt",
     description:
-      "is a comprehensive web and mobile e-commerce platform offering seamless user management, dynamic UI with React, secure payments via Stripe, and advanced shopping features like product browsing, reviews, and discount codes.",
+      "I am studying Computer Science and Artificial Intelligence in the Computer Science department. I am passionate about developing innovative solutions through coding and AI technologies",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2025",
+  },
+  {
+    title: "Front-End InternShip ",
+    location: "Baianat, New Damietta",
+    description:
+      "Worked as a front-end intern at Baianat, utilizing TypeScript and Vue.js to develop dynamic and responsive web applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - present",
   },
   {
     title: "Front-End Developer",
