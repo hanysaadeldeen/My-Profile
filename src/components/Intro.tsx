@@ -62,7 +62,7 @@ function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex max-sm:flex-col justify-center gap-4 items-center"
+        className="flex flex-wrap justify-center gap-4 items-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -93,20 +93,22 @@ function Intro() {
           Download My CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/hany-saad-eldean-1b616625a/"
-          target="_blank"
-          className="bg-white p-4 group text-xl rounded-full  hover:scale-110 transition text-gray-700 hover:text-gray-950 "
-        >
-          <FaLinkedin className="group-hover:rotate-6 transition" />
-        </a>
-        <a
-          href="https://github.com/hanysaadeldeen"
-          target="_blank"
-          className="group bg-white p-4 text-xl rounded-full transition hover:scale-110  text-gray-700 hover:text-gray-950 "
-        >
-          <FaGithub className="group-hover:-rotate-6 transition" />
-        </a>
+        <div className="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/hany-saad-eldean-1b616625a/"
+            target="_blank"
+            className="bg-white p-4 group text-xl rounded-full  hover:scale-110 transition text-gray-700 hover:text-gray-950 "
+          >
+            <FaLinkedin className="group-hover:rotate-6 transition" />
+          </a>
+          <a
+            href="https://github.com/hanysaadeldeen"
+            target="_blank"
+            className="group bg-white p-4 text-xl rounded-full transition hover:scale-110  text-gray-700 hover:text-gray-950 "
+          >
+            <FaGithub className="group-hover:-rotate-6 transition" />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
