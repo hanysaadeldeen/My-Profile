@@ -1,5 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+// import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
@@ -51,8 +51,8 @@ export const experiencesData = [
     location: "Udemy and Youtube",
     description:
       "I've gained skills in front-end development through courses on Udemy and tutorials on YouTube. This includes expertise in HTML, CSS, JavaScript, and frameworks like React and Next",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2024",
+    icon: React.createElement(FaReact),
+    date: "2021 - Present",
   },
 ] as const;
 

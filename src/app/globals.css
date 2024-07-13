@@ -7,3 +7,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+  visibility: visible !important;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+  visibility: visible !important;
+}
+
+.vertical-timeline {
+  width: 100% !important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  margin: 0 15px !important;
+}
+
+.vertical-timeline.vertical-timeline--two-columns:before {
+  background-color: #e5e7eb;
+}
