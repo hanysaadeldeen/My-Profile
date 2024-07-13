@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import SectionName from "./SectionName";
 import { projectsData } from "@/lib/data";
 

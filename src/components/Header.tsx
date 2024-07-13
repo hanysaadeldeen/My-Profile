@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
-import React, { useContext, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { ActiveSectionfunc } from "@/context/ActiveSectionContextProvider";
 export default function Header() {
@@ -41,7 +41,7 @@ export default function Header() {
                     damping: 30,
                   }}
                   className={
-                    "hover:bg-gray-100  hover:text-gray-950  transition max-sm:gap-x-0 max-sm:gap-y-0 p-2 rounded-full text-gray-500  font-thin hover:cursor-pointer " +
+                    "hover:bg-gray-200 font-medium hover:text-gray-950  transition max-sm:gap-x-0 max-sm:gap-y-0 p-2 rounded-full text-gray-500   hover:cursor-pointer " +
                     (activeSection === link.name
                       ? "bg-gray-100  text-gray-950"
                       : "")
