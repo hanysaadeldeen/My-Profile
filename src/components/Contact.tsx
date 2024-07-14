@@ -4,8 +4,10 @@ import SectionName from "./SectionName";
 import { useSectionInView } from "@/lib/hook";
 import { IoIosSend } from "react-icons/io";
 import { motion } from "framer-motion";
+import { getData } from "../../actions/sendEmail";
 export const Contact = () => {
   const ref = useSectionInView(0.11, "Contact");
+
   return (
     <motion.section
       initial={{
@@ -39,7 +41,10 @@ export const Contact = () => {
         </a>{" "}
         or through this form.
       </p>
-      <form action="" className="flex flex-col mt-10">
+      <form
+        action={(formdata) => getData(formdata)}
+        className="flex flex-col mt-10"
+      >
         <input
           className="h-14 p-4 rounded-lg  border outline-none  transition-all "
           name="senderEmail"
@@ -51,6 +56,7 @@ export const Contact = () => {
         <textarea
           className="h-52 mt-5 resize-none transition-all p-4 outline-none rounded-lg border"
           placeholder="Your Message"
+          name="description"
         />
         <button
           className="group 
