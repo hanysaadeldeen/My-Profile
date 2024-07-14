@@ -42,7 +42,7 @@ export const Contact = () => {
         or through this form.
       </p>
       <form
-        action={(formdata) => getData(formdata)}
+        action={async (formdata) => await getData(formdata)}
         className="flex flex-col mt-10"
       >
         <input
