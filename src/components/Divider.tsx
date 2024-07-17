@@ -13,7 +13,7 @@ function Divider() {
         delay: 0.3,
         duration: 0.7,
       }}
-      className="h-16 w-1 bg-gray-300 max-sm:hidden my-20 rounded-full "
+      className="h-16 w-1 bg-gray-300  dark:bg-opacity-35 max-sm:hidden my-20 rounded-full "
     ></motion.div>
   );
 }

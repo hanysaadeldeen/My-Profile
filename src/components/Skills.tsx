@@ -29,7 +29,7 @@ const Skills = () => {
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"
-              className="p-3 tracking-wide hover:bg-gray-300 cursor-pointer transition  bg-gray-200 rounded-2xl"
+              className="p-3 tracking-wide hover:bg-gray-300 cursor-pointer transition dark:bg-white/10  dark:text-gray-80 bg-gray-200 rounded-2xl"
               key={index}
               custom={index}
               viewport={{

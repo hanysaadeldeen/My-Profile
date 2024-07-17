@@ -7,9 +7,9 @@ const BtnContact = () => {
 
   return (
     <button
-      className="group   mx-auto
+      className="group   dark:bg-white dark:bg-opacity-80 dark:hover:bg-opacity-100 dark:active:bg-opacity-100  dark:text-gray-950
         hover:scale-105 transition-all
-        flex items-center justify-center gap-3 rounded-full w-[8rem] py-3 px-6 text-white mt-3 max-sm:w-full bg-black"
+        flex items-center justify-center gap-3 rounded-full w-[8rem] py-3 px-6 text-white mt-3 max-sm:w-full bg-gray-950"
     >
       {!pending && (
         <>

@@ -85,7 +85,7 @@ function Intro() {
           </span>
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
+          className="group bg-white dark:bg-opacity-20 dark:text-white px-7 py-3 flex items-center gap-2 rounded-full
           focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer  "
           href="/Hany-Mohamed.pdf"
           download
@@ -97,14 +97,14 @@ function Intro() {
           <a
             href="https://www.linkedin.com/in/hany-saad-eldean-1b616625a/"
             target="_blank"
-            className="bg-white p-4 group text-xl rounded-full  hover:scale-110 transition text-gray-700 hover:text-gray-950 "
+            className="bg-white p-4 group text-xl rounded-full dark:bg-white/10  dark:text-white   hover:scale-110 transition text-gray-700 hover:text-gray-950 "
           >
             <FaLinkedin className="group-hover:rotate-6 transition" />
           </a>
           <a
             href="https://github.com/hanysaadeldeen"
             target="_blank"
-            className="group bg-white p-4 text-xl rounded-full transition hover:scale-110  text-gray-700 hover:text-gray-950 "
+            className="group bg-white p-4 text-xl rounded-full dark:bg-white/10   dark:text-white  transition hover:scale-110  text-gray-700 hover:text-gray-950 "
           >
             <FaGithub className="group-hover:-rotate-6 transition" />
           </a>

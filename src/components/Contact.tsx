@@ -31,11 +31,11 @@ export const Contact = () => {
       <p
         className=" 
       max-md:text-center
-      text-gray-600 -mt-3 "
+      text-gray-600 -mt-3  dark:text-white"
       >
         Please contact me directly at{" "}
         <a
-          className="underline text-gray-900 mx-2 "
+          className="underline text-gray-900 dark:text-white mx-2 "
           href="mailto: hanymohamedsaadeldean@gmail.com "
         >
           hanymohamedsaadeldean@gmail.com
@@ -51,7 +51,7 @@ export const Contact = () => {
         className="flex flex-col mt-10"
       >
         <input
-          className="h-14 p-4 rounded-lg  border outline-none  transition-all "
+          className="h-14 p-4  dark:bg-opacity-80 dark:text-gray-900  dark:focus:bg-opacity-100 dark:hover:bg-opacity-100 bg-white rounded-lg  border outline-none  transition-all "
           name="senderEmail"
           type="email"
           required
@@ -59,7 +59,7 @@ export const Contact = () => {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 mt-5 resize-none transition-all p-4 outline-none rounded-lg border"
+          className="h-52 mt-5   dark:bg-opacity-80 dark:text-gray-900  dark:focus:bg-opacity-100 dark:hover:bg-opacity-100 bg-white resize-none transition-all p-4 outline-none rounded-lg border"
           placeholder="Your Message"
           name="description"
         />
