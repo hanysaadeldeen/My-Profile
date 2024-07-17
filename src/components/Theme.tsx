@@ -7,18 +7,25 @@ const ThemeSwitch = () => {
   const [theme, toogleTheme] = useState<Theme>();
 
   const ToogleSwitch = () => {
-    theme === "light" ? toogleTheme("dark") : toogleTheme("light");
-    console.log(theme);
-
-    JSON.stringify(localStorage.setItem("theme", theme));
+    if (theme === "light") {
+      toogleTheme("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      toogleTheme("light");
+      localStorage.setItem("theme", "light");
+    }
   };
 
   useEffect(() => {
-    if (localStorage.getItem("theme")) {
-      toogleTheme(localStorage.getItem("theme"));
-    } else {
-      toogleTheme("light");
-      JSON.stringify(localStorage.setItem("theme", "light"));
+    const ThemeLocal = localStorage.getItem("theme") as Theme | null;
+    if (ThemeLocal) {
+      toogleTheme(ThemeLocal);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      toogleTheme("dark");
+      localStorage.setItem("theme", "light");
     }
   }, []);
   return (
