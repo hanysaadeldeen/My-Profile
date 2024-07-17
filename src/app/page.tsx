@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import ThemeSwitch from "@/components/Theme";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Experience />
       <Contact />
       <Footer />
+      <ThemeSwitch />
     </main>
   );
 }
