@@ -2,9 +2,9 @@
 import React from "react";
 import SectionName from "./SectionName";
 import { useSectionInView } from "@/lib/hook";
-import { IoIosSend } from "react-icons/io";
 import { motion } from "framer-motion";
 import { getData } from "../../actions/sendEmail";
+import BtnContact from "./Btn-contact";
 export const Contact = () => {
   const ref = useSectionInView(0.11, "Contact");
 
@@ -58,14 +58,7 @@ export const Contact = () => {
           placeholder="Your Message"
           name="description"
         />
-        <button
-          className="group 
-        hover:scale-105 transition-all
-        flex items-center gap-3 rounded-full w-fit py-3 px-6 text-white mt-3 max-sm:w-full bg-black"
-        >
-          Submit{" "}
-          <IoIosSend className="group-hover:-translate-y-1 transition-all text-xl opacity-80" />
-        </button>
+        <BtnContact />
       </form>
     </motion.section>
   );
