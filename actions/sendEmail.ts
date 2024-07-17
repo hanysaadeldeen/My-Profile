@@ -9,9 +9,6 @@ export const getData = async (formdata: FormData) => {
   const senderEmail = formdata.get("senderEmail");
   const message = formdata.get("description");
 
-  console.log(senderEmail);
-  console.log(message);
-
   if (!validateString(senderEmail)) {
     return {
       error: "invalid Email",
@@ -23,21 +20,25 @@ export const getData = async (formdata: FormData) => {
     };
   }
 
+  let data;
   try {
-    resend.emails.send({
+    data = resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       reply_to: senderEmail as string,
       to: "hanymohamedsaadeldean@gmail.com",
-      subject: "Message from contact form",
-      // text: message as string,
-      react: React.createElement(ContactFormEmail, {
-        message: message as string,
-        senderEmail: senderEmail as string,
-      }),
+      subject: "Message from contact form at Portfolio",
+      text: message as string,
+      // react: React.createElement(ContactFormEmail, {
+      //   message: message as string,
+      //   senderEmail: senderEmail as string,
+      // }),
     });
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
+  return {
+    data,
+  };
 };
