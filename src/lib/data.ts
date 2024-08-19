@@ -67,6 +67,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "LMS",
+    description:
+      "LMS is designed to provide a seamless educational experience for both students and teachers. Built with the latest technologies, this platform offers a variety of features to facilitate course creation, management, and consumption.",
+    tags: ["Next.js 14", "MongoDB", "Stripe", "Prisma", "Tailwind", "Clerk"],
+    imageUrl: Lms,
+    link: "https://learning-management-system-lms-inky.vercel.app",
+  },
+  {
     title: "Hook Store",
     description:
       "is a comprehensive web and mobile e-commerce platform offering seamless user management, dynamic UI with React, secure payments via Stripe, and advanced shopping features .",
@@ -82,23 +90,7 @@ export const projectsData = [
     imageUrl: Hook,
     link: "https://master--melodious-starship-c29078.netlify.app/#/",
   },
-  {
-    title: "Learning Management System",
-    description:
-      "LMS is designed to provide a seamless educational experience for both students and teachers. Built with the latest technologies, this platform offers a variety of features to facilitate course creation, management, and consumption.",
-    tags: [
-      "Next.js 14",
-      "React",
-      "Stripe",
-      "Mux",
-      "Prisma",
-      "Tailwind",
-      "MongoDB",
-      "Clerk",
-    ],
-    imageUrl: Lms,
-    link: "https://master--melodious-starship-c29078.netlify.app/#/",
-  },
+
   {
     title: "Canva",
     description:

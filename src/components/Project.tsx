@@ -64,16 +64,18 @@ function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
         md:group-even:ml-[27rem]
         max-md:w-full md:pr-10 group-even:pr-0 max-md:text-center  md:w-1/2 md:pl-4"
           >
-            <h2 className="mb-4  text-xl font-bold tracking-wide ">{title}</h2>
-            <p className="mb-12 max-md:mb-8  max-sm:mb-5 leading-relaxed dark:text-white/50 text-gray-700">
+            <h2 className="mb-4  text-xl font-bold tracking-wide text-center ">
+              {title}
+            </h2>
+            <p className="mb-5 text-center max-sm:mb-5 leading-relaxed dark:text-white/50 text-gray-700">
               {description}
             </p>
-            <ul className="max-md:justify-center flex gap-2 flex-wrap">
+            <ul className="max-md:justify-center flex gap-2  flex-wrap">
               {tags.map((skill, index) => {
                 return (
                   <li
                     key={index}
-                    className="text-white rounded-full py-2 px-4 text-xs uppercase dark:text-white dark:bg-gray-900 dark:group-hover:bg-gray-700   group-hover:bg-gray-900 transition bg-gray-700"
+                    className="text-white  rounded-full py-2 px-4 text-xs uppercase dark:text-white dark:bg-gray-900 dark:group-hover:bg-gray-700   group-hover:bg-gray-900 transition bg-gray-700"
                   >
                     {skill}
                   </li>
