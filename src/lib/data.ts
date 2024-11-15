@@ -53,7 +53,7 @@ export const experiencesData = [
     title: "Front-End InternShip ",
     location: "Baianat, New Damietta",
     description:
-      "Worked as a front-end intern at Baianat, utilizing TypeScript and Vue.js to develop dynamic and responsive web applications.",
+      "Worked as a front-end intern at Baianat, utilizing Nuxt.js, Vue.js, TypeScript and GraphQL to develop dynamic and responsive web applications.",
     icon: React.createElement(CgWorkAlt),
     date: "2024 - present",
   },
