@@ -69,14 +69,6 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "SHOP.CO",
-    description:
-      "This project delivers a 3-page e-commerce website crafted with Vue.js and TypeScript, featuring a responsive design, dynamic product listings, detailed product pages, and a robust cart system, meticulously aligned with a provided Figma design.",
-    tags: ["Vue 3", "TypeScript", "Bootstrap", "Pinia", "Vercel"],
-    imageUrl: home,
-    link: "https://e-commerce-using-vue.vercel.app/",
-  },
-  {
     title: "Dashboard",
     description:
       "This dashboard application delivers a streamlined experience for managing users and data. Built with Nuxt.js, TypeScript, GraphQL, and Sass, it supports user registration, login, and full CRUD operations, leveraging modern tools for efficiency and scalability.",
@@ -92,6 +84,14 @@ export const projectsData = [
     ],
     imageUrl: dashboard,
     link: "https://nuxt-js-dashboard-sage.vercel.app/",
+  },
+   {
+    title: "SHOP.CO",
+    description:
+      "This project delivers a 3-page e-commerce website crafted with Vue.js and TypeScript, featuring a responsive design, dynamic product listings, detailed product pages, and a robust cart system, meticulously aligned with a provided Figma design.",
+    tags: ["Vue 3", "TypeScript", "Bootstrap", "Pinia", "Vercel"],
+    imageUrl: home,
+    link: "https://e-commerce-using-vue.vercel.app/",
   },
   {
     title: "LMS",
