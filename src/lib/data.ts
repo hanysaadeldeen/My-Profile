@@ -10,6 +10,8 @@ import dashborad from "@/assets/dashborad.png";
 import nike from "@/assets/nike.jpg";
 import game from "@/assets/game.png";
 import Lms from "@/assets/lms.jpg";
+import dashboard from "@/assets/dashboard.png";
+import home from "@/assets/home.png";
 
 export const links = [
   {
@@ -66,6 +68,31 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "SHOP.CO",
+    description:
+      "This project delivers a 3-page e-commerce website crafted with Vue.js and TypeScript, featuring a responsive design, dynamic product listings, detailed product pages, and a robust cart system, meticulously aligned with a provided Figma design.",
+    tags: ["Vue 3", "TypeScript", "Bootstrap", "Pinia", "Vercel"],
+    imageUrl: home,
+    link: "https://e-commerce-using-vue.vercel.app/",
+  },
+  {
+    title: "Dashboard",
+    description:
+      "This dashboard application delivers a streamlined experience for managing users and data. Built with Nuxt.js, TypeScript, GraphQL, and Sass, it supports user registration, login, and full CRUD operations, leveraging modern tools for efficiency and scalability.",
+    tags: [
+      "Nuxt 3",
+      "TypeScript",
+      "Bootstrap",
+      "Pinia",
+      "GraphQL",
+      "Sass",
+      "vee-validate",
+      "Vercel",
+    ],
+    imageUrl: dashboard,
+    link: "https://nuxt-js-dashboard-sage.vercel.app/",
+  },
   {
     title: "LMS",
     description:
@@ -136,17 +163,23 @@ export const projectsData = [
 
 export const skillsData = [
   "HTML",
-  "CSS",
-  "JavaScript",
+  "Pug",
   "TypeScript",
+  "JavaScript",
+  "GraphQL",
   "React",
   "Next.js",
-  "Python",
+  "Vue 3",
+  "Nuxt 3",
   "Redux",
   "Redux-Toolkit",
+  "Vuex",
+  "Pinia",
+  "CSS",
   "Tailwind",
-  "Sass",
   "Bootstrap",
+  "Sass",
+  "Python",
   "Material-Ui",
   "Git",
   "GitHup",
