@@ -56,9 +56,9 @@ function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I&apos;m Hany. I&apos;m a Front End developer with 1.5 years of
+        Hello, I&apos;m Hany. I&apos;m a Front End developer with 2 years of
         experience. I enjoy building sites & apps.
-        <span className="italic"> My focus is React & (Next.js)</span>.
+        <span className="italic"> My focus is React & (Next.js) / Vue & (Nuxt.js) </span>.
       </motion.h1>
 
       <motion.div
